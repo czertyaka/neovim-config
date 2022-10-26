@@ -20,9 +20,10 @@ map('n', '<C-a>', ':Telescope live_grep<CR>', default_opts)
 map('n', '<C-c>', ':Telescope git_commits<CR>', default_opts)
 
 -- Tagbar
--- toggle
-map('n', '<F8>', [[ :TagbarToggle<CR> ]], default_opts)
+map('n', '<F8>', ':TagbarToggle<CR>', default_opts)
 
 -- NvimTree
--- toggle
-map('n', '<F7>', [[ :NvimTreeToggl<CR> ]], default_opts)
+map('n', '<F7>', ':NvimTreeToggle<CR>', default_opts)
+
+-- YouCompleteMe
+map('n', '<F9>', ':YcmCompleter GoToDeclaration<CR>', default_opts)
