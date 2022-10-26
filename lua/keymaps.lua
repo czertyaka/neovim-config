@@ -27,3 +27,4 @@ map('n', '<F7>', ':NvimTreeToggle<CR>', default_opts)
 
 -- YouCompleteMe
 map('n', '<F9>', ':YcmCompleter GoToDeclaration<CR>', default_opts)
+map('n', '<F10>', ':YcmCompleter GoToDefinition<CR>', default_opts)
