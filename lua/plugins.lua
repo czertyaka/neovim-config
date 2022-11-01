@@ -15,6 +15,7 @@ return require('packer').startup(function()
     use 'tpope/vim-fugitive'
     use 'airblade/vim-gitgutter'
     use 'ntpeters/vim-better-whitespace'
+    use 'vim-scripts/DoxygenToolkit.vim'
 
     use {
         'nvim-telescope/telescope.nvim',
