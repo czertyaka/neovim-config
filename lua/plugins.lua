@@ -11,7 +11,6 @@ return require('packer').startup(function()
     use 'cohama/lexima.vim'
     use 'morhetz/gruvbox'
     use 'navarasu/onedark.nvim'
-    use 'valloric/youcompleteme'
     use 'tpope/vim-fugitive'
     use 'airblade/vim-gitgutter'
     use 'ntpeters/vim-better-whitespace'
@@ -38,6 +37,11 @@ return require('packer').startup(function()
     use {
         'numToStr/Comment.nvim',
         config = function() require'Comment'.setup() end,
+    }
+
+    use {
+        'valloric/youcompleteme',
+        requires = 'rdnetto/YCM-Generator',
     }
 
 end)
