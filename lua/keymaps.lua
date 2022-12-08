@@ -16,7 +16,7 @@ map('n', '<F1>', ':nohl<CR>', default_opts) -- reset search highlighting
 -- find files in telescope
 map('n', '<C-p>', ':Telescope find_files hidden=true<CR>', default_opts)
 -- find in files
-map('n', '<C-a>', ':Telescope live_grep<CR>', default_opts)
+map('n', '<C-a>', ':Telescope live_grep_args<CR>', default_opts)
 -- view commits
 map('n', '<C-c>', ':Telescope git_commits<CR>', default_opts)
 

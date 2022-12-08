@@ -18,8 +18,14 @@ return require('packer').startup(function()
 
     use {
         'nvim-telescope/telescope.nvim',
-        requires = 'nvim-lua/plenary.nvim',
-        config = function() require'telescope'.setup {} end,
+        requires = {
+            { 'nvim-lua/plenary.nvim' },
+            { 'nvim-telescope/telescope-live-grep-args.nvim' }
+        },
+        config = function()
+            require'telescope'.setup {}
+            require'telescope'.load_extension('live_grep_args')
+        end,
     }
 
     use {
@@ -44,7 +50,7 @@ return require('packer').startup(function()
 
     use {
         'numToStr/Comment.nvim',
-        config = function() require'Comment'.setup() end,
+        config = function() require'Comment'.setup {} end,
     }
 
     use {
