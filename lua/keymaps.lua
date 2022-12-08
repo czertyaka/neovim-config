@@ -8,6 +8,7 @@ map('i', '<C-s>', '<ESC>:w<CR>', default_opts) -- save in insert mode
 
 map('n', '<Tab>', ':tabnext<CR>', default_opts) -- go to next tab on <TAB>
 map('n', '<S-Tab>', ':tabprev<CR>', default_opts) -- go to previous tab on <S+TAB>
+map('n', '<S-x><S-x>', ':tabclose<CR>', default_opts) -- close tab
 
 map('n', '<F1>', ':nohl<CR>', default_opts) -- reset search highlighting
 
