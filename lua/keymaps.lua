@@ -2,15 +2,14 @@ local map = vim.api.nvim_set_keymap
 local default_opts = {noremap = true, silent = true}
 
 map('v', '<S-y>', '"+y', {}) -- copy to system's clipboard
-
 map('n', '<C-s>', ':w<CR>',  default_opts) -- save in notmal mode
 map('i', '<C-s>', '<ESC>:w<CR>', default_opts) -- save in insert mode
-
 map('n', '<Tab>', ':tabnext<CR>', default_opts) -- go to next tab on <TAB>
 map('n', '<S-Tab>', ':tabprev<CR>', default_opts) -- go to previous tab on <S+TAB>
 map('n', '<S-x><S-x>', ':tabclose<CR>', default_opts) -- close tab
-
 map('n', '<F1>', ':nohl<CR>', default_opts) -- reset search highlighting
+map('n', '<C-k>', 'ciw""<ESC>P', default_opts) -- double-quote word in normal mode
+map('v', '<C-k>', 'da""<ESC>P', default_opts) -- double-quote word in normal mode
 
 -- Telescope
 -- find files in telescope
