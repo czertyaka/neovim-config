@@ -1,5 +1,6 @@
 local cmd = vim.cmd -- execute Vim commands
 local opt = vim.opt -- global/buffer/windows-scoped options
+local glo = vim.g   -- global variables
 
 -- General
 opt.colorcolumn = '100'         -- set ruler position
@@ -25,4 +26,9 @@ cmd'colorscheme desert' -- scheme name
 -- Plugins settings
 -- GitGutter
 vim.g.gitgutter_sign_allow_clobber = 0 -- do not override sign column writter by other plugins
+
+-- DoxygenToolkit
+glo.DoxygenToolkit_briefTag_pre = ""
+glo.DoxygenToolkit_compactDoc = "yes"
+glo.DoxygenToolkit_compactOneLineDoc = "yes"
 
