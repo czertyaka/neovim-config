@@ -32,3 +32,8 @@ glo.DoxygenToolkit_briefTag_pre = ""
 glo.DoxygenToolkit_compactDoc = "yes"
 glo.DoxygenToolkit_compactOneLineDoc = "yes"
 
+-- YouCompleteMe
+glo.ycm_clangd_args = {
+    '--header-insertion=never'
+}
+
