@@ -16,6 +16,7 @@ opt.softtabstop = 4	            -- shift 4 spaces when tab
 opt.tabstop = 4		            -- 1 tab == 4 spaces
 opt.smartindent = true          -- autoindent new lines
 opt.guicursor = "a:blinkon500"  -- make cursor blink
+opt.relativenumber = true       -- relative line numbers
  -- do not autocomment new lines
 cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
 
@@ -34,8 +35,8 @@ glo.DoxygenToolkit_compactOneLineDoc = "yes"
 
 -- YouCompleteMe
 glo.ycm_clangd_args = {
-    '--header-insertion=never'
+    '--header-insertion=never'          -- disable headers auto-inserting
 }
-glo.ycm_open_loclist_on_ycm_diags = 0
-glo.ycm_complete_in_comments = 1
+glo.ycm_open_loclist_on_ycm_diags = 0   -- do not open local list
+glo.ycm_complete_in_comments = 1        -- enable autocompletion in comments
 
