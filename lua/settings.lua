@@ -36,4 +36,6 @@ glo.DoxygenToolkit_compactOneLineDoc = "yes"
 glo.ycm_clangd_args = {
     '--header-insertion=never'
 }
+glo.ycm_open_loclist_on_ycm_diags = 0
+glo.ycm_complete_in_comments = 1
 
