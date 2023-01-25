@@ -12,12 +12,9 @@ map('n', '<C-k>', 'ciw""<ESC>P', default_opts) -- double-quote word in normal mo
 map('v', '<C-k>', 'da""<ESC>P', default_opts) -- double-quote word in normal mode
 
 -- Telescope
--- find files in telescope
-map('n', '<C-p>', ':Telescope find_files hidden=true<CR>', default_opts)
--- find in files
-map('n', '<C-a>', ':Telescope live_grep_args<CR>', default_opts)
--- view commits
-map('n', '<C-c>', ':Telescope git_commits<CR>', default_opts)
+map('n', '<C-p>', ':Telescope find_files hidden=true<CR>', default_opts) -- find files in telescope
+map('n', '<C-a>', ':Telescope live_grep_args<CR>', default_opts) -- find in files
+map('n', '<C-c>', ':Telescope git_commits<CR>', default_opts) -- view commits
 
 -- Tagbar
 map('n', '<F8>', ':TagbarToggle<CR>', default_opts)
