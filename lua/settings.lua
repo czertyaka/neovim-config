@@ -21,12 +21,13 @@ opt.relativenumber = true       -- relative line numbers
 cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
 
 -- Colors and theme
-opt.termguicolors = true                --  24-bit RGB colors
-cmd'colorscheme desert' -- scheme name
+opt.termguicolors = true            --  24-bit RGB colors
+glo.everforest_background='hard'    -- increase contrast
+cmd'colorscheme everforest'         -- scheme name
 
 -- Plugins settings
 -- GitGutter
-vim.g.gitgutter_sign_allow_clobber = 0 -- do not override sign column writter by other plugins
+vim.g.gitgutter_sign_allow_clobber = 0  -- do not override sign column writter by other plugins
 
 -- DoxygenToolkit
 glo.DoxygenToolkit_briefTag_pre = ""

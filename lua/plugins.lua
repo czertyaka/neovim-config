@@ -4,13 +4,17 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
 
+    -- Color schemes
+    use 'morhetz/gruvbox'
+    use 'navarasu/onedark.nvim'
+    use 'sainnhe/vim-color-forest-night'
+
+    -- Plugins
     use 'wbthomason/packer.nvim'
     use 'nvim-treesitter/nvim-treesitter'
     use 'majutsushi/tagbar'
     use 'mhinz/vim-startify'
     use 'cohama/lexima.vim'
-    use 'morhetz/gruvbox'
-    use 'navarasu/onedark.nvim'
     use 'tpope/vim-fugitive'
     use 'airblade/vim-gitgutter'
     use 'ntpeters/vim-better-whitespace'
@@ -56,6 +60,5 @@ return require('packer').startup(function()
         'valloric/youcompleteme',
         requires = 'rdnetto/YCM-Generator',
     }
-
 end)
 
