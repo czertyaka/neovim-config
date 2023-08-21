@@ -20,6 +20,8 @@ return require('packer').startup(function()
     use 'ntpeters/vim-better-whitespace'
     use 'vim-scripts/DoxygenToolkit.vim'
     use 'martinda/jenkinsfile-vim-syntax'
+    use 'christoomey/vim-tmux-navigator'
+    use 'valloric/youcompleteme'
 
     use {
         'nvim-telescope/telescope.nvim',
@@ -55,11 +57,6 @@ return require('packer').startup(function()
     use {
         'numToStr/Comment.nvim',
         config = function() require'Comment'.setup {} end,
-    }
-
-    use {
-        'valloric/youcompleteme',
-        requires = 'rdnetto/YCM-Generator',
     }
 end)
 

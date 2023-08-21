@@ -1,4 +1,5 @@
 local cmd = vim.cmd -- execute Vim commands
+local fn = vim.fn   -- execute Vim builtin functions
 local opt = vim.opt -- global/buffer/windows-scoped options
 local glo = vim.g   -- global variables
 
@@ -36,8 +37,10 @@ glo.DoxygenToolkit_compactOneLineDoc = "yes"
 
 -- YouCompleteMe
 glo.ycm_clangd_args = {
-    '--header-insertion=never'          -- disable headers auto-inserting
+    '--header-insertion=never'                                                  -- disable headers auto-inserting
 }
-glo.ycm_open_loclist_on_ycm_diags = 0   -- do not open local list
-glo.ycm_complete_in_comments = 1        -- enable autocompletion in comments
-
+glo.ycm_open_loclist_on_ycm_diags = 0               -- do not open local list
+glo.ycm_complete_in_comments = 1                    -- enable autocompletion in comments
+glo.ycm_clangd_uses_ycmd_caching = 0                -- let clangd control code completion
+glo.ycm_use_clangd = 1                              -- use system's clangd
+glo.ycm_clangd_binary_path = fn.exepath("clangd")   -- set system's clangd path
