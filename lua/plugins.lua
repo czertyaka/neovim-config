@@ -17,6 +17,7 @@ return require('packer').startup(function()
     use 'cohama/lexima.vim'
     use 'tpope/vim-fugitive'
     use 'f-person/git-blame.nvim'
+    use 'airblade/vim-gitgutter'
     use 'ntpeters/vim-better-whitespace'
     use 'vim-scripts/DoxygenToolkit.vim'
     use 'martinda/jenkinsfile-vim-syntax'
