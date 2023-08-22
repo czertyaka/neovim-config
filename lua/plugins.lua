@@ -13,7 +13,6 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     use 'nvim-treesitter/nvim-treesitter'
     use 'majutsushi/tagbar'
-    use 'mhinz/vim-startify'
     use 'cohama/lexima.vim'
     use 'tpope/vim-fugitive'
     use 'f-person/git-blame.nvim'

@@ -5,11 +5,16 @@ map('v', '<S-y>', '"+y', {}) -- copy to system's clipboard
 map('n', '<Tab>', ':tabnext<CR>', default_opts) -- go to next tab on <TAB>
 map('n', '<S-Tab>', ':tabprev<CR>', default_opts) -- go to previous tab on <S+TAB>
 map('n', '<S-x><S-x>', ':tabclose<CR>', default_opts) -- close tab
-map('n', '<F1>', ':nohl<CR>', default_opts) -- reset search highlighting
 
 map('n', '<C-p>', ':Telescope find_files hidden=true<CR>', default_opts) -- find files in telescope
 map('n', '<C-a>', ':Telescope live_grep_args<CR>', default_opts) -- find in files
 map('n', '<C-c>', ':Telescope git_commits<CR>', default_opts) -- view commits
+
+-- Cleaning
+map('n', '<F1>', ':nohl<CR>', default_opts) -- reset search highlighting
+map('i', '<F1>', ':nohl<CR>', default_opts) -- reset search highlighting
+map('n', '<F2>', ':StripWhitespace<CR>', default_opts) -- delete trailing whitespaces
+map('i', '<F2>', ':StripWhitespace<CR>', default_opts) -- delete trailing whitespaces
 
 -- Side bars
 map('n', '<F5>', ':NvimTreeToggle<CR>', default_opts)
