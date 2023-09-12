@@ -12,10 +12,7 @@ map('n', '<C-c>', ':Telescope git_commits<CR>', default_opts) -- view commits
 
 -- Useful
 map('n', '<F1>', ':nohl<CR>', default_opts) -- reset search highlighting
-map('i', '<F1>', ':nohl<CR>', default_opts) -- reset search highlighting
 map('n', '<F2>', ':StripWhitespace<CR>', default_opts) -- delete trailing whitespaces
-map('i', '<F2>', ':StripWhitespace<CR>', default_opts) -- delete trailing whitespaces
-map('n', '<F3>', ':set relativenumber!<CR>', default_opts) -- toggle relative numbers
 map('n', '<F3>', ':set relativenumber!<CR>', default_opts) -- toggle relative numbers
 
 -- Side bars
