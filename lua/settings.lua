@@ -19,6 +19,7 @@ opt.smartindent = true          -- autoindent new lines
 opt.guicursor = "a:blinkon500"  -- make cursor blink
 opt.relativenumber = true       -- relative line numbers
 opt.completeopt = 'menu'        -- do not show preview for autocompletion
+opt.cmdheight = 0               -- hide command line
  -- do not autocomment new lines
 cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
 
