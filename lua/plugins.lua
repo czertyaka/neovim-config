@@ -22,6 +22,8 @@ return require('packer').startup(function()
     use 'martinda/jenkinsfile-vim-syntax'
     use 'christoomey/vim-tmux-navigator'
     use 'valloric/youcompleteme'
+    use 'rdnetto/YCM-Generator'
+    use { "catppuccin/nvim", as = "catppuccin" }
 
     use {
         'nvim-telescope/telescope.nvim',

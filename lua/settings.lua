@@ -18,13 +18,14 @@ opt.tabstop = 4		            -- 1 tab == 4 spaces
 opt.smartindent = true          -- autoindent new lines
 opt.guicursor = "a:blinkon500"  -- make cursor blink
 opt.relativenumber = true       -- relative line numbers
+opt.completeopt = 'menu'        -- do not show preview for autocompletion
  -- do not autocomment new lines
 cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
 
 -- Colors and theme
 opt.termguicolors = true            --  24-bit RGB colors
 glo.everforest_background='hard'    -- increase contrast
-cmd'colorscheme everforest'         -- scheme name
+cmd'colorscheme catppuccin-mocha'   -- scheme name
 
 -- Plugins settings
 -- GitGutter
@@ -42,5 +43,3 @@ glo.ycm_clangd_args = {
 glo.ycm_open_loclist_on_ycm_diags = 0               -- do not open local list
 glo.ycm_complete_in_comments = 1                    -- enable autocompletion in comments
 glo.ycm_clangd_uses_ycmd_caching = 0                -- let clangd control code completion
-glo.ycm_use_clangd = 1                              -- use system's clangd
-glo.ycm_clangd_binary_path = fn.exepath("clangd")   -- set system's clangd path
