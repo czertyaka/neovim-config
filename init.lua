@@ -1,5 +1,6 @@
 -- Lua modules import
 
-require('plugins')
-require('settings')
-require('keymaps')
+require("config.lazy")
+require("lazy").setup("plugins")
+require("settings")
+require("keymaps")
